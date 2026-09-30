@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perroman tienda</title>
+
+    <style>
+        /* -----------------------------
+           ELEMENTO VISUAL
+           Se define una base general para el documento.
+           El cuerpo tiene una tipografía clara y fondo neutro.
+        ----------------------------- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* -----------------------------
+           ELEMENTO CONCEPTUAL
+           La cabecera se entiende como la identidad visual
+           de la página, con un color corporativo y un estilo
+           uniforme que refuerza la marca.
+        ----------------------------- */
+        header {
+            background-color: #1f3a5f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* -----------------------------
+           ELEMENTO PRÁCTICO
+           El menú debe ser claro, accesible y fácil de leer.
+           Se usa flex para distribuir los enlaces horizontalmente.
+        ----------------------------- */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+            margin: 10px 0 0;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+
+        /* -----------------------------
+           ELEMENTO VISUAL
+           El bloque principal presenta un aspecto estructural
+           con margen y separación para mejorar la lectura.
+        ----------------------------- */
+        main {
+            padding: 30px 20px;
+        }
+
+        /* -----------------------------
+           ELEMENTO RELACIONAL
+           La sección agrupa el contenido principal y establece
+           una relación entre el encabezado "Hola" y el texto
+           que lo acompaña.
+        ----------------------------- */
+        section {
+            background-color: grey;
+            padding: 20px;
+            border-left: 5px solid #1f3a5f;
+            border-radius: 8px;
+        }
+
+        article {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+        }
+
+        /* -----------------------------
+           ELEMENTO PRÁCTICO
+           El pie de página aporta información útil y cierra la
+           estructura de la página con un estilo sencillo.
+        ----------------------------- */
+        footer {
+            background-color: greenyellow;
+            color: darkblue;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- -----------------------------
+         ELEMENTO CONCEPTUAL
+         La cabecera organiza la identidad de la página
+         y presenta el nombre principal del ejercicio.
+    ----------------------------- -->
+    <header>
+        <h1>Ejercicio 3</h1>
+
+        <!-- -----------------------------
+             ELEMENTO PRÁCTICO Y RELACIONAL
+             El menú conecta la página con diferentes recursos
+             externos, facilitando la navegación.
+        ----------------------------- -->
+        <nav>
+            <ul>
+                <li><a href="https://www.google.com/?hl=es">Enlace1</a></li>
+                <li><a href="https://www.sony.es">Enlace2</a></li>
+                <li><a href="https://www.microsoft.com/es-es">Enlace3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- -----------------------------
+         ELEMENTO CONCEPTUAL Y RELACIONAL
+         El main contiene el contenido principal de la página, y
+         el section articula la relación entre título y artículo.
+    ----------------------------- -->
+    <main>
+        <section>
+            <h2>Hola</h2>
+            <article>Hola mundo</article>
+        </section>
+    </main>
+
+    <!-- -----------------------------
+         ELEMENTO PRÁCTICO
+         El footer cierra la página con información de derechos
+         y datos legales del contenido.
+    ----------------------------- -->
+    <footer>
+        <p>&copy; 2026 Portal de Tecnología. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
