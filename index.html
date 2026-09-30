@@ -1,48 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Diseño de interfaces web</title>
-    <style>
-                * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Diseño de interfaces web</title>
+        <style>
 
         body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            background-color: #1f3a5f;
+            color: white;
             padding: 20px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            color: #0056b3;
-            margin-bottom: 10px;
             text-align: center;
         }
 
-        p {
-            font-size: 1.1rem;
-            color: #666;
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+            margin: 10px 0 0;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+        .dropdown {
+            position: relative;
+        }
+        main {
+            padding: 30px 20px;
+        }
+
+        section {
+            background-color: grey;
+            padding: 20px;
+            border-left: 5px solid #1f3a5f;
+            border-radius: 8px;
+        }
+
+        article {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+        }
+
+
+        footer {
+            background-color: #01214e;
+            color: white;
             text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
-</head>
+    </head>
 
-<body>
-    <h1>Diseño de Interfaces Web</h1>
-    <p>Portfolio del módulo de Diseño de Interfaces Web de 2º DAW</p>
-</body>
+    <body>
+        <header>
+            <h1>Portfolio - Diseño de interfaces web</h1>
+            <nav class="menu">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">Temas</a>
+                        <ul class="submenu">
+                            <li class="dropdown-sub">
+                                <a href="#">Tema 1</a>
+                                <ul class="submenu-sub">
+                                    <li><a
+                                            href="Temas/Tema1/ejercicio1.pdf">Ejercicio
+                                            1</a></li>
+                                    <li><a
+                                            href="Temas/Tema1/ejercicio3.odt">Ejercicio
+                                            3</a></li>
+                                            <li><a
+                                            href="Temas/Tema1/ejercicio4.odt">Ejercicio
+                                            4</a></li>
+                                            <li><a
+                                            href="Temas/Tema1/ejercicio5.odt">Ejercicio
+                                            5</a></li>
 
-</html>
+                                </ul>
+                            </li>
+                            <ul class="submenu">
+                                <li><a
+                                        href="Temas/Tema2/ejercicio1.odt">ejercicio
+                                        1</a></li>
+                                <li><a
+                                        href="Temas/Tema2/ejercicio2.html">ejercicio
+                                        2</a></li>
+                                <li><a
+                                        href="Temas/Tema2/ejercicio3.html">ejercicio
+                                        3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <h1>Diseño de Interfaces Web</h1>
+                <p>Portfolio del módulo de Diseño de Interfaces Web de 2º
+                    DAW</p>
+            </main>
+            <footer>
+                <p>&copy; 2026 Portfolio de Diseño de Interfaces Web - Antonio
+                    Hernández Gialbert - Todos los derechos reservados.</p>
+            </footer>
+        </body>
+
+    </html>
