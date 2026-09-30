@@ -21,25 +21,50 @@
             text-align: center;
         }
 
-        nav ul {
-            list-style-type: none;
-            display: flex;
-            padding: 0;
-            margin: 10px 0 0;
-            justify-content: center;
-            gap: 20px;
-        }
+    .menu > ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        margin: 10px 0 0;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            transition: background-color 0.3s;
-            font-weight: bold;
-        }
-        .dropdown {
-            position: relative;
-        }
+    .menu li {
+        position: relative;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px 15px;
+        font-weight: bold;
+    }
+
+    .submenu,
+    .submenu-sub {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #1f3a5f;
+        min-width: 180px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .submenu-sub {
+        left: 100%;
+        top: 0;
+    }
+
+    .dropdown:hover > .submenu,
+    .dropdown-sub:hover > .submenu-sub {
+        display: block;
+    }
         main {
             padding: 30px 20px;
         }
@@ -88,39 +113,55 @@
                                     <li><a
                                             href="Temas/Tema1/ejercicio3.odt">Ejercicio
                                             3</a></li>
-                                            <li><a
+                                    <li><a
                                             href="Temas/Tema1/ejercicio4.odt">Ejercicio
                                             4</a></li>
-                                            <li><a
+                                    <li><a
                                             href="Temas/Tema1/ejercicio5.odt">Ejercicio
                                             5</a></li>
-
                                 </ul>
                             </li>
-                            <ul class="submenu">
-                                <li><a
-                                        href="Temas/Tema2/ejercicio1.odt">ejercicio
-                                        1</a></li>
-                                <li><a
-                                        href="Temas/Tema2/ejercicio2.html">ejercicio
-                                        2</a></li>
-                                <li><a
-                                        href="Temas/Tema2/ejercicio3.html">ejercicio
-                                        3</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <h1>Diseño de Interfaces Web</h1>
-                <p>Portfolio del módulo de Diseño de Interfaces Web de 2º
-                    DAW</p>
-            </main>
-            <footer>
-                <p>&copy; 2026 Portfolio de Diseño de Interfaces Web - Antonio
-                    Hernández Gialbert - Todos los derechos reservados.</p>
-            </footer>
-        </body>
 
-    </html>
+                            <li class="dropdown-sub">
+                                <a href="#">Tema 2</a>
+                                <ul class="submenu-sub">
+                                    <li><a
+                                            href="Temas/Tema2/ejercicio1.odt">Ejercicio
+                                            1</a></li>
+                                    <li><a
+                                            href="Temas/Tema2/ejercicio2.html">Ejercicio
+                                            2</a></li>
+                                    <li><a
+                                            href="Temas/Tema2/ejercicio3.html">Ejercicio
+                                            3</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown-sub">
+                                <a href="#">Tema 3</a>
+                                <ul class="submenu-sub">
+                                    <li><a
+                                            href="Temas/Tema3/ejercicio1.html">Ejercicio
+                                            1</a></li>
+                                    <li><a
+                                            href="Temas/Tema3/ejercicio2.html">Ejercicio
+                                            2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Diseño de Interfaces Web</h1>
+            <p>Portfolio del módulo de Diseño de Interfaces Web de 2º
+                DAW</p>
+        </main>
+        <footer>
+            <p>&copy; 2026 Portfolio de Diseño de Interfaces Web - Antonio
+                Hernández Gialbert - Todos los derechos reservados.</p>
+        </footer>
+    </body>
+
+</html>
