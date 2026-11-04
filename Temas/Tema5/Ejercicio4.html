@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Ancho Fijo Centrada</title>
+</head>
+
+<body style="background-color: #1e3a8a;" color=white; padding: 20px; font-family: Futura, Arial;>
+
+    <!-- Contenedor de ancho fijo de 800px y centrado con margin: 0 auto -->
+    <!-- <div -->
+    <!-- style="width: 800px; margin: 0 auto; background-color: #ffffff; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;"> -->
+    <!-- Ej.5 : Contenedor de acho variable basado en porcentaje -->
+    <div
+        style="width: 80%; max-width: 1200px; min-width: 400px; margin: 0 auto; background-color: #ffffff; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+
+        <!-- Cabecera -->
+        <header style="background-color: #1e3a8a; color: white; padding: 20px; text-align: center;">
+            <h1 style="margin: 0;">Mi Sitio Web de Ancho Fijo</h1>
+            <p style="margin: 5px 0 0 0;">Este diseño mide exactamente 800 píxeles</p>
+        </header>
+
+        <!-- Barra de Navegación -->
+        <nav style="background-color: #3b82f6; padding: 10px; text-align: center;">
+            <a href="#" style="color: white; text-decoration: none; margin: 0 15px; font-weight: bold;">Inicio</a>
+            <a href="#" style="color: white; text-decoration: none; margin: 0 15px; font-weight: bold;">Servicios</a>
+            <a href="#" style="color: white; text-decoration: none; margin: 0 15px; font-weight: bold;">Contacto</a>
+        </nav>
+
+        <!-- Contenido Principal -->
+        <main style="padding: 30px; line-height: 1.6; color: #333333;">
+            <h2>¿Cómo funciona este diseño?</h2>
+            <p>
+                Sin importar si abres esta página en una pantalla de resolución gigante o en una ventana pequeña de
+                escritorio, la estructura blanca central mantendrá estrictamente sus <strong>800 píxeles de
+                    ancho</strong>.
+            </p>
+
+            <h3>El truco del centrado</h3>
+            <p>
+                Para lograr que el bloque quede alineado en el medio de la pantalla, aplicamos la propiedad
+                <code>margin: 0 auto;</code> al contenedor principal. Esto le dice al navegador que calcule de forma
+                idéntica el espacio sobrante a la izquierda y a la derecha, empujando la estructura justo al centro
+                del monitor.
+            </p>
+        </main>
+
+        <!-- Pie de página -->
+        <footer
+            style="background-color: #f3f4f6; color: #6b7280; text-align: center; padding: 15px; font-size: 14px; border-top: 1px solid #e5e7eb;">
+            &copy; Antonio Hernández Gilabert - 2026 - DIWEB
+        </footer>
+
+    </div>
+</body>
+
+</html>
