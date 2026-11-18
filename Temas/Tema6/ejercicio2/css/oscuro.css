@@ -1,20 +1,14 @@
+body {
+        color: #1a1a1a; 
+}
+
 h1 {
-    color: blue;
-    font-size: 32px;
-}
-
-h2:first-of-type {
-    color: green;
-}
-
-p:last-of-type {
-    text-align: center;
-}
-
-p {
-    font-size: 18px;
+    color: lightblue;
 }
 
 h2 {
-    color: orange;
+    color: lightyellow;
+}
+p {
+    color: white;
 }

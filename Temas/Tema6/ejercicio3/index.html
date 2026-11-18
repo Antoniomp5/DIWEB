@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi página web</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        h1 {
+            color: green;
+        }
+
+        p {
+            color: orange;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mi página web</h1>
+
+    <p>Primer párrafo.</p>
+
+    <p style="color: red;">Segundo párrafo.</p>
+
+</body>
+
+</html>
+
+<!-- 
+1. ¿De qué color aparece el título?
+El titulo aparce de color verde, machacando el color azul
+ya que el css del html, se carga al final. Estadno dentro de la estiqueta <style>
+2. ¿Qué tamaño tiene el título?
+El título sige estando en 30px, ya no hay especificaciones en el html
+3. ¿De qué color aparece el primer párrafo?
+El primer parrafo aparace en naranja, machacando al negro
+4. ¿De qué color aparece el segundo párrafo?
+En rojo, machacando al naranja y negro, al estar dentro de la etiqueta <p> y ser el último en cargar
+5. Modifica el HTML para que el título aparezca en negro utilizando un estilo en línea.
+6. Elimina los estilos internos. ¿Qué sucede con los colores? 
+Si los elimino, se cargarían los estilos originales de estilos.css
+-->
