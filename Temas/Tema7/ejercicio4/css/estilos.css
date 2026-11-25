@@ -1,0 +1,33 @@
+p {
+    color: blue;
+}
+
+.mensaje {
+    color: green;
+}
+
+p.destacado {
+    color: orange;
+}
+
+#principal p {
+    color: red;
+}
+
+.mensaje.destacado {
+    color: purple;
+}
+
+/* 
+1. ¿Qué color tendrá el texto?
+Tendrá un color azul, por defecto
+2. ¿Qué selector tiene mayor especificidad?
+El selctor .mensaje.destacado y p.destacado, ya que son demasiado especificos.
+3. ¿Qué ocurriría si eliminamos el selector #principal p?
+Pues que los textos en rojo pasan a ser azules o naranjas si son destacados
+4. ¿Qué sucedería si añadimos otra regla .mensaje.destacado al final?
+Afectará a todas las etiquetas con .mensaje.destacado
+5. ¿Qué buenas prácticas aplicarías para evitar este tipo de conflictos? 
+Para evitarlos, en class="", pondría las especificación de cada estilo
+*/
+

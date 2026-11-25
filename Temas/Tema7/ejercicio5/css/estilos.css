@@ -1,0 +1,8 @@
+.caja { padding: 20px; }
+.caja__titulo { font-size: 24px; }
+.caja__texto { color: gray; }
+.caja__boton { padding: 10px; background-color: lightblue; }
+/*Caja especifica para boton*/
+.caja__boton--azul { background-color: blue; }
+
+

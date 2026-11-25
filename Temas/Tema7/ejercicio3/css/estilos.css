@@ -1,0 +1,111 @@
+    :root {
+      color-scheme: light;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #23332d;
+      background: #f5f7f2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    #encabezado {
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      color: white;
+      background: #285b49;
+    }
+
+    #encabezado h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    #encabezado p {
+      margin: 0;
+      color: #dcebe3;
+    }
+
+    main {
+      width: min(1050px, calc(100% - 2rem));
+      margin: 2rem auto;
+    }
+
+    .oferta {
+      margin-bottom: 1.5rem;
+      padding: 1rem 1.25rem;
+      border-left: 5px solid #e6a23c;
+      border-radius: 0.5rem;
+      background: #fff3d8;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .tarjeta {
+      display: flex;
+      flex-direction: column;
+      padding: 1.25rem;
+      border: 1px solid #e0e7e1;
+      border-radius: 0.75rem;
+      background: white;
+      box-shadow: 0 4px 14px rgb(35 51 45 / 7%);
+    }
+
+    .tarjeta--destacada {
+      border: 2px solid #d99032;
+    }
+
+    .producto-imagen {
+      display: grid;
+      min-height: 135px;
+      margin-bottom: 1rem;
+      place-items: center;
+      border-radius: 0.5rem;
+      background: #edf3ee;
+      font-size: 4rem;
+    }
+
+    .tarjeta h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.25rem;
+    }
+
+    .tarjeta p {
+      margin: 0 0 1rem;
+      line-height: 1.5;
+    }
+
+    .precio {
+      margin-top: auto;
+      padding-bottom: 1rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .boton {
+      padding: 0.75rem 1rem;
+      border: 0;
+      border-radius: 0.4rem;
+      color: white;
+      background: #285b49;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .boton:hover {
+      background: #194533;
+    }
+
+    .boton:focus-visible {
+      outline: 3px solid #e6a23c;
+      outline-offset: 3px;
+    }
